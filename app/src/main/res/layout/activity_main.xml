@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".AndroidNews"
+        android:background="#b642ce"
+        android:freezesText="true">
+        <TextView
+            android:freezesText="true"
+            android:id="@+id/empty_list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:textColor="#e12929">
+        </TextView>
+        <!-- Empty TextView-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/activity_main_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+        <ListView
+            android:freezesText="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView2"
+            android:layout_centerHorizontal="true"
+            android:background="#e09090" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</ScrollView>

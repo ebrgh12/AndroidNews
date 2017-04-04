@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:freezesText="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title"
+        android:id="@+id/TitleView"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:freezesText="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/author1"
+        android:id="@+id/AuthorView"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/TitleView"
+        android:layout_alignLeft="@+id/TitleView"
+        android:layout_alignStart="@+id/TitleView" />
+    <TextView
+        android:freezesText="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/date1"
+        android:id="@+id/DateView"
+        android:layout_below="@+id/AuthorView"
+        android:layout_alignLeft="@+id/AuthorView"
+        android:layout_alignStart="@+id/AuthorView"
+        android:layout_marginTop="27dp" />
+</RelativeLayout>

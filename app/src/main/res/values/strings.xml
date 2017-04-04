@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android </string>
+    <string name="title">TITLE</string>
+    <string name="search">Search</string>
+    <string name="author1">AUTHOR</string>
+    <string name="date1">DATE</string>
+    <string name="hint1">Enter your choice of book</string>
+    <string name="ginternet"> Good internet connection</string>
+</resources>
